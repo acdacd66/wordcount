@@ -1,0 +1,33 @@
+<head>
+    <!--  -->
+ 
+    <style>
+    .a{text-align: center}
+    body{background-image:url("http://img.hani.co.kr/imgdb/resize/2019/0108/00502901_20190108.JPG")
+    }
+    </style>
+    <script>
+    var an=getElementById("str");
+    var val=an.value;
+    
+    </script>
+  
+  
+</head>
+
+<body>
+  <div class="a">
+        <h1>World Count</h1>
+
+<img src="https://wordcounter.net/images/word-counter.jpg" width="300" height="100">    
+     
+<form action="{%url 'count'%}">
+    <textarea cols="50" rows="10" name="fulltext" id="str"></textarea>
+
+
+    <input type="submit" value="count">
+</form>
+<a href="{%url 'about'%}"> ABOUT</a>
+
+</div>
+</body>

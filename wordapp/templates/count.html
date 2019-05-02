@@ -1,0 +1,18 @@
+<h3>총단어수: {{total}}
+    <!-- 총단어수 데이터 받아서 적기  -->
+    <br>
+    입력한 텍스트:{{fulltext}}
+    
+    <br>
+    <hr>
+    단어 카운투:
+    {%for word, countTotal in dictionary%}
+    {{word}} - {{countTotal}}
+    <br>
+    {%endfor%}
+    {%for i in word_lis%}
+    {{i}}
+    <br>
+    {%endfor%}
+    
+</h3>
